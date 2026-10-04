@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Hoizr walkthrough and local setup guide
+    url: https://github.com/roop37/hoizr-walkthrough
+    about: A guided tour of the architecture and a local development guide. Start here for "how does this work" and setup questions.
+  - name: Report a security vulnerability
+    url: https://github.com/roop37/hoizr-dotgithub/blob/main/SECURITY.md
+    about: Do not open a public issue for vulnerabilities. Follow the private reporting steps in the security policy.
+  - name: Getting help
+    url: https://github.com/roop37/hoizr-dotgithub/blob/main/SUPPORT.md
+    about: Where to ask questions and what information to include.

@@ -1,0 +1,57 @@
+name: Documentation
+description: Report missing, unclear or wrong documentation, or ask a setup question that the docs should answer.
+title: "Docs: "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the docs. Small fixes are also welcome as a pull request directly.
+  - type: dropdown
+    id: repo
+    attributes:
+      label: Which repo?
+      description: Where the documentation lives, or which repository it should describe.
+      multiple: true
+      options:
+        - main-server
+        - customer-server
+        - hoizr-worker
+        - tracking-server
+        - hoizr-shared
+        - hoizr-client
+        - business-client
+        - internal-admin-client
+        - hoizr-artist-client
+        - hoizr-scanner-app
+        - hoizr-walkthrough
+        - ".github"
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Link to the page or section
+      description: A URL or file path, if the documentation exists.
+      placeholder: https://github.com/roop37/hoizr-walkthrough/blob/main/docs/09-local-development.md
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is missing, unclear or wrong?
+      description: If the docs disagree with the code, link the code too.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested change
+      description: The wording or content you would expect to find.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and this has not been reported yet.
+          required: true
+        - label: I agree to follow the [Code of Conduct](https://github.com/roop37/hoizr-dotgithub/blob/main/CODE_OF_CONDUCT.md).
+          required: true
